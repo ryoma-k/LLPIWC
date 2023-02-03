@@ -1,0 +1,6 @@
+dataset:
+  dataset_name: cifar10
+  num_class: &num_class 10
+loss:
+  lambdas:
+    num_class: *num_class

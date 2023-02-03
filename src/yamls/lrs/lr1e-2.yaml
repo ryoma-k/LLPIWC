@@ -1,0 +1,3 @@
+trainer:
+  optim_state:
+    lr: 1.0e-2

@@ -1,0 +1,7 @@
+loss:
+  lambdas:
+    loss_mode: &loss_mode dllp
+trainer:
+  loss_mode: *loss_mode
+dataset:
+  loss_mode: *loss_mode

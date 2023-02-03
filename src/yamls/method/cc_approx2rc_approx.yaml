@@ -1,0 +1,8 @@
+loss:
+  lambdas:
+    loss_mode: &loss_mode cc_approx2rc_approx
+trainer:
+  loss_mode: *loss_mode
+  unfreeze_weight_epoch: 5
+dataset:
+  loss_mode: *loss_mode

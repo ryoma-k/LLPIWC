@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "llpiwc"
+version = "0.1.0"
+description = ""
+authors = ["ryoma kobayashi <kobayashi@mi.t.u-tokyo.ac.jp>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+torch = {url = "https://download.pytorch.org/whl/cu117/torch-1.13.0%2Bcu117-cp310-cp310-linux_x86_64.whl"}
+torchvision = {url = "https://download.pytorch.org/whl/cu117/torchvision-0.14.0%2Bcu117-cp310-cp310-linux_x86_64.whl"}
+omegaconf = "^2.2.3"
+pandas = "^1.5.1"
+tqdm = "^4.64.1"
+tensorboard = "^2.11.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+notebook = "^6.5.2"
+seaborn = "^0.12.1"
+pot = "^0.8.2"
+pysen = "^0.10.2"
+black = "^22.10.0"
+flake8 = "^5.0.4"
+isort = "^5.10.1"
+mypy = "^0.991"
+
+[tool.pysen.lint]
+enable_black = true
+enable_flake8 = true
+enable_isort = true
+enable_mypy = true
+mypy_preset = "strict"
+line_length = 88
+[[tool.pysen.lint.mypy_targets]]
+  paths = ["."]

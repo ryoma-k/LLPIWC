@@ -1,0 +1,2 @@
+trainer:
+  early_stopping_rounds: 300

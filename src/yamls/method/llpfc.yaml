@@ -1,0 +1,8 @@
+loss:
+  lambdas:
+    loss_mode: &loss_mode llpfc
+trainer:
+  loss_mode: *loss_mode
+dataset:
+  loss_mode: *loss_mode
+  regroup_epoch: 20

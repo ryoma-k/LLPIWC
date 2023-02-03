@@ -1,0 +1,7 @@
+main:
+  debug: True
+trainer:
+  epochs: 2
+loss:
+  lambdas:
+    debug: True

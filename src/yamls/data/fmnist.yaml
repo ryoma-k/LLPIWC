@@ -1,0 +1,6 @@
+dataset:
+  dataset_name: fashionmnist
+  num_class: &num_class 10
+loss:
+  lambdas:
+    num_class: *num_class

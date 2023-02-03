@@ -1,0 +1,6 @@
+dataset:
+  num_instance: &K 2
+  trn_bs: 128
+loss:
+  lambdas:
+    K: *K

@@ -1,0 +1,27 @@
+main:
+  seed: 0
+  save_path: ../result/
+  preprocess: False
+dataset:
+  root: ../input/
+  val_ratio: 0.1
+model:
+  parameter:
+    num_classes: 10
+loss:
+  lambdas:
+    max_perm: 50000
+    debug: False
+trainer:
+  test_freq:
+  save_freq: 10000000
+  optimizer: Adam
+  optim_state:
+    lr: 1.0e-3
+    weight_decay: 1.0e-5
+  scheduler:
+  scheduler_state:
+  iterations:
+  epochs: 500
+  max_grad_norm: inf
+criterion:
