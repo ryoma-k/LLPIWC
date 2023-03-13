@@ -1725,7 +1725,7 @@ opt-einsum = ["opt-einsum (>=3.3)"]
 
 [package.source]
 type = "url"
-url = "https://download.pytorch.org/whl/cu117/torch-1.13.0%2Bcu117-cp310-cp310-linux_x86_64.whl"
+path = "/cache/torch-1.13.0%2Bcu117-cp310-cp310-linux_x86_64.whl"
 [[package]]
 name = "torchvision"
 version = "0.14.0+cu117"
@@ -1746,7 +1746,7 @@ scipy = ["scipy"]
 
 [package.source]
 type = "url"
-url = "https://download.pytorch.org/whl/cu117/torchvision-0.14.0%2Bcu117-cp310-cp310-linux_x86_64.whl"
+path = "/cache/torchvision-0.14.0%2Bcu117-cp310-cp310-linux_x86_64.whl"
 [[package]]
 name = "tornado"
 version = "6.2"

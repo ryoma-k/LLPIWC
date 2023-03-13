@@ -1,0 +1,12 @@
+version: "3"
+services:
+  work:
+    image: llpiwc:latest
+    volumes:
+      - ../../:/work
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
